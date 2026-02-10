@@ -3,76 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ian Mwendwa | Software Engineer</title>
+  <title>Ian Mwendwa | Full Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">IM</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <header>
-    <h1>Ian Mwendwa</h1>
-    <p>Software Engineer</p>
+  <header class="hero">
+    <div class="hero-content">
+      <h1><span class="text-light">Ian</span><span class="text-gradient">Mwendwa</span></h1>
+      <p class="tagline">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+      <div class="cta-container">
+        <button class="cta-btn" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </button>
+        <a href="https://github.com/trycode143" target="_blank" class="social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/ianmwendwa" target="_blank" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Software Engineer with a strong interest in developing
-      efficient, scalable and user-friendly software solutions. I enjoy solving
-      complex problems, learning new technologies and building applications
-      that make a real impact. I am committed to continuous improvement and
-      delivering high-quality work.
-    </p>
-  </section>
+  <div class="container">
+    <section id="about" class="card-section">
+      <h2>About Me</h2>
+      <div class="about-card">
+        <p>
+          I'm a passionate Software Engineer specializing in building efficient, scalable, and user-friendly applications. With expertise across the full stack, I thrive on solving complex problems and staying current with emerging technologies.
+        </p>
+        <p>
+          My goal is to create meaningful digital solutions that make an impact while continuously pushing my boundaries as a developer.
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Java</li>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Django</li>
-      <li>MySQL</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <section id="skills" class="card-section">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-container">
+        <div class="skills-column">
+          <h3 class="skill-category">LANGUAGES</h3>
+          <ul class="skill-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skill-category">FRONTEND</h3>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skill-category">BACKEND</h3>
+          <ul class="skill-list">
+            <li>Node.js</li>
+            <li>Django</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skill-category">DATABASES</h3>
+          <ul class="skill-list">
+            <li>MySQL</li>
+            <li>Database Design</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skill-category">TOOLS</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Version Control</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skill-category">SOFT SKILLS</h3>
+          <ul class="skill-list">
+            <li>Agile</li>
+            <li>Collaboration</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
+    <section id="projects" class="card-section">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Library Management System</h3>
+            <i class="fas fa-code"></i>
+          </div>
+          <p class="tech-stack">Python • Django • MySQL</p>
+          <p>A comprehensive web application for managing book inventory, member registrations, and borrowing records. Demonstrates mastery of Django framework, database modeling, and CRUD operations.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">Database</span>
+          </div>
+        </div>
 
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>
-      Developed as a personal project to improve my skills in web development. Built using Python and Django to manage book inventory, member registrations and borrowing records.
-    </p>
-      <p>
-        Enhanced understanding of Django framework, database modeling and CRUD operations.
-      </p>
-    </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Rental Management Hub</h3>
+            <i class="fas fa-building"></i>
+          </div>
+          <p class="tech-stack">Full Stack • Team Project • Agile</p>
+          <p>Collaborated with a team to design and develop a rental management platform featuring property listings, rental tracking, and user management. Gained experience in Git workflows and team collaboration.</p>
+          <div class="project-tags">
+            <span class="tag">Full Stack</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="project">
-      <h3>Rental Management Hub</h3>
-      <p>
-        Collaborated with a team to design and develop a web-based rental management system. Implemented features for property listings, rental tracking and user management.
-      </p>
-      <p>
-        Gained hands-on experience in version control (Git), team collaboration and Agile project workflows.
-      </p>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ianmutuku143@gmail.com">ian143@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+    <section id="contact" class="card-section">
+      <h2>Let's <span class="text-gradient-inline">Connect</span></h2>
+      <div class="contact-container">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <a href="mailto:ianmutuku143@gmail.com">ianmutuku143@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <a href="https://github.com/trycode143" target="_blank">github.com/trycode143</a>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <a href="https://linkedin.com/in/ianmwendwa" target="_blank">linkedin.com/in/ianmwendwa</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <p>© 2026 Ian Mwendwa</p>
+    <p>© 2026 Ian Mwendwa. Designed with <i class="fas fa-heart"></i> by myself.</p>
   </footer>
+
+  <script>
+    // Scroll indicator functionality
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      scrollIndicator.addEventListener('click', () => {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+      });
+      scrollIndicator.style.cursor = 'pointer';
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Add scroll event for navbar background
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+      }
+    });
+
+    // Add scroll animations for elements
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'slideUp 0.6s ease-out forwards';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe cards for animation
+    document.querySelectorAll('.card-section, .project-card, .contact-card, .skills-column').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
